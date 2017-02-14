@@ -1,5 +1,7 @@
 from queue import PriorityQueue
 
+# PriorityQueue也是线程安全的，可用于多线程间的同步
+
 class Job(object):
     def __init__(self, priority, description):
         self.priority = priority
