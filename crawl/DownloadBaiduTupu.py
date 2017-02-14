@@ -10,13 +10,13 @@ url = 'http://tupu.baidu.com/tupu/api/graph/v2?id='
 
 def downloadtupudata(lemmaId):
     proxies = {
-        'http': 'adslspider01.web.zw.vm.ted:8080'
+        'http': 'www.test01.com:8080'
     }
     global url
     for i in range(5):
         try:
             randData = randrange(32) + 1
-            host = 'adslspider' + ('%02d' % randData) + '.web.zw.vm.ted'
+            host = 'www.test' + ('%02d' % randData) + '.com'
             if randData <= 16:
                 proxies['http'] = host + ":8080"
             else:
